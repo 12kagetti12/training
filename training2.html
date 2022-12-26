@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>coffee</title>
-<link rel="shortcut icon" href="img/favicon.ico">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<title>Coffee</title>
+<link rel="shortcut icon" href="img/coffee.ico">
+<link href="stylesheet/all.min.css" rel="stylesheet">
 <meta name="description" content="">
 <meta name="keywords" content="">
 <!-- OGP -->
@@ -22,6 +22,55 @@
 <link rel="stylesheet" href="training2.css" media="all">
 </head>
 <body>
+  <header>
+    <div class="">
+      <div class="">
+        <h1 class=""><a href="#area_top"><img class="" src="#" alt="ロゴ"></a></h1>
+        <nav class="">
+          <ul class="" id="scroll_nav">
+            <li class=""><a href="#area_top">Top</a></li>
+            <li class=""><a href="#area_menu">Menu</a></li>
+            <ul class="">
+              <li class=""><a href="#area_drink">Drink</a></li>
+              <li class=""><a href="#area_food">Food</a></li>
+            </ul>
+            <li class=""><a href="#area_media">Media</a></li>
+            <li class=""><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <button class="c-media_navButton">
+      <span class="c-media_navButton_line"></span>
+      <span>Menu</span>
+    </button>
+
+    <form class="c-form-x_aline_left-y_column" action="#">
+      <p>Contact</p>
+      <div>
+        <label for="contact-name">Name</label>
+        <input type="text" name="contact-name" id="name" autocomplete="name">  
+      </div>
+      <div>
+        <label for="contact-email">E-mail</label>
+        <input type="text" name="contact-email" id="email" autocomplete="email" inputmode="email">  
+      </div>
+      <label>Title</label>
+      <div>
+        <input type="radio" name="contact-titile" id="contact-purodact"><label for="contact-purodact">商品について</label>
+        <input type="radio" name="contact-titile" id="contact-stock"><label for="contact-stock">在庫について</label>
+        <input type="radio" name="contact-titile" id="contact-others"><label for="contact-others">その他</label>
+        <input type="text" name="contact-titile" id="contact-input_others_text">  
+      </div>
+      <div>
+        <label for="contact-message">Message</label>
+        <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>  
+      </div>
+      <button type="contact-subumit">Submit</button>
+      <button type="contact-button">Cansel</button>
+    </form>
+  </header>
+
   <div class="c-main_visual" id="area_top">
     <img src="img/mainvisual.jpg" alt="main_visual">
   </div>
@@ -32,9 +81,9 @@
   </section>
 
   <section class="l-addMinWidth-x_center_sideByside l-media-y_tandem" id="main_contents_image">
-    <img src="img/recipe1.jpg" alt="content_image1">
-    <img src="img/recipe2.jpg" alt="content_image2">
-    <img src="img/recipe3.jpg" alt="content_image3">
+    <img src="img/recipe1.jpg" alt="instaguram_image">
+    <img src="img/recipe2.jpg" alt="content_image1">
+    <img src="img/recipe3.jpg" alt="content_image2">
   </section>
 
   <section class="l-addMaxWidth-x_center-y_tandem" id="main_contents">
@@ -42,7 +91,7 @@
       <h2>メニュー</h2>
     </button>
 
-    <div class="">
+    <div class="" id="area_menu">
       <dl>
         <dt>ドリンク</dt>
           <dd>エスプレッソ + ミルク
@@ -100,9 +149,10 @@
 
   <footer class="c-x_center-y_tandem" id="footer">
     <div class="c-x_cneter_sideByside" id="area_media">
-      <a href="#"><i class="fa-brands fa-facebook"></i>facebook</a>
-      <a href="#"><i class="fa-brands fa-twitter"></i>twitter</a>
-      <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+      <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+      <a href="#"><i class="fa-brands fa-twitter"></i>Twitter</a>
+      <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+      <a href="#">Contact</a>
     </div>
     <p>&copy; Satoshi kageyama</p>
   </footer>
